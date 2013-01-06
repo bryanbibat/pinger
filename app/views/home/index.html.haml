@@ -7,4 +7,5 @@
           = website.status_code
           = website.status_message
           %br
-          = l website.checked_at, format: :short
+          - unless website.checked_at.nil?
+            = l website.checked_at, format: :short

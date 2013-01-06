@@ -1,4 +1,5 @@
 require "bundler/capistrano"
+require "delayed/recipes"
 
 set :deploy_via, :remote_cache
 set :application, "pinger"
@@ -25,6 +26,10 @@ namespace :deploy do
     run "touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end
+
+after "deploy:stop",    "delayed_job:stop"
+after "deploy:start",   "delayed_job:start"
+after "deploy:restart", "delayed_job:restart"
 
 before "deploy:finalize_update", :copy_production_database_configuration, :copy_secret_token
 
