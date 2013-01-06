@@ -4,7 +4,7 @@ gem 'rails', '3.2.10'
 
 gem 'jquery-rails'
 
-gem 'mysql2'
+gem 'pg'
 
 gem 'bootstrap-sass', '~> 2.2.2.0'
 gem 'haml', '~> 3.1.7'
@@ -14,9 +14,6 @@ gem 'meta_search', '>= 1.1.0.pre'
 
 gem 'httparty'
 gem 'addressable'
-gem 'delayed_job_active_record'
-gem 'daemons'
-gem 'whenever', require: false
 
 # Gems used only for assets and not required
 # in production environments by default.

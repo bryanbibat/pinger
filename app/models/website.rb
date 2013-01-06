@@ -16,7 +16,7 @@ class Website < ActiveRecord::Base
   end
 
   def self.check_all
-    all.each { |w| w.delay.check }
+    all.each { |w| w.check }
   end
 
   def container_class
