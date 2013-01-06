@@ -1,0 +1,57 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+footer p {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.website-status {
+  @include border-radius(5px);
+  @include makeColumn(2);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  padding: 10px 10px 0px;
+  margin: 5px;
+  .name {
+    font-weight: bold;
+    font-size: 120%;
+  }
+}
+
+.redirect {
+  color: #C09853;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  a {
+    color: #C09853;
+  }
+}
+
+.error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border-color: #EED3D7;
+  a {
+    color: #B94A48;
+  }
+}
+
+.ok {
+  color: #468847;
+  background-color: #DFF0D8;
+  border-color: #D6E9C6;
+  a {
+    color: #468847;
+  }
+}
+
+.unknown {
+  color: #3A87AD;
+  background-color: #D9EDF7;
+  border-color: #BCE8F1;
+  a {
+    color: #3A87AD;
+  }
+}
