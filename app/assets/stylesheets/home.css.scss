@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+@import "bootstrap-responsive";
 
 footer p {
   text-align: center;
@@ -10,10 +11,8 @@ footer p {
 
 .website-status {
   @include border-radius(5px);
-  @include makeColumn(2);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   padding: 10px 10px 0px;
-  margin: 5px;
   .name {
     font-weight: bold;
     font-size: 120%;

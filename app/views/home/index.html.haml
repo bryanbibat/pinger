@@ -1,7 +1,7 @@
 - @websites.each_slice(6) do |websites|
   .row-fluid
     - websites.each do |website|
-      .website-status{ class: website.container_class }
+      .span2.website-status{ class: website.container_class }
         %p.name= link_to website.name, website.url, title: website.url
         %p
           = website.status_code
