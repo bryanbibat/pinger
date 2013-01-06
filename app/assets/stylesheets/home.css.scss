@@ -9,10 +9,15 @@ footer p {
   margin-top: 70px;
 }
 
+.main-container {
+  padding-top: 10px;
+}
+
 .website-status {
   @include border-radius(5px);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   padding: 10px 10px 0px;
+  margin: 10px 0;
   .name {
     font-weight: bold;
     font-size: 120%;
